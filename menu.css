@@ -101,7 +101,7 @@
     }
 
     /* --- Responsive สำหรับมือถือ --- */
-    @media (max-width: 576px) {
+    @media (max-width: 760px) {
       
         .contact-wrapper {
             padding-top: 80px; /* ลดระยะห่างด้านบนลงเล็กน้อย */
@@ -121,6 +121,9 @@
         .contact-info input, .contact-info textarea {
             margin-bottom: 15px; /* ลดระยะห่างระหว่างช่อง */
         }
+        .section-title {
+                font-size: 20px;
+        }
 
     }
 
@@ -133,7 +136,7 @@
 
 .section-title {
     color:#984d02;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     background-color:#ebdfd0;
     font-weight: bold;
 }

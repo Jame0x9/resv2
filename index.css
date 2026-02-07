@@ -88,7 +88,7 @@
         }
 
         .hero-section {
-            background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.9)),
+            /* background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.9)),
                          url('main.jpg');
             background-size: cover;
             background-position: center;
@@ -98,7 +98,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative;
+            position: relative; */
+            background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.9)), url('main.jpg');
+    background-size: cover;
+    background-position: center; /* แนะนำให้เปิดไว้นะครับ เพื่อให้ภาพอยู่ตรงกลาง */
+    background-attachment: fixed;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
         }
 
         .hero-content h1 {
@@ -202,7 +213,13 @@
             }
             #welcome{
                 font-size: 40px;
+                margin-top: 200px;
         }
+        .hero-section {
+        background-attachment: scroll; /* ปิด fixed เพื่อแก้ปัญหาภาพไม่ cover */
+        min-height: 50vh; /* อาจจะปรับความสูงให้พอดีกับมือถือมากขึ้น */
+    }
+
         }
 
 
@@ -212,4 +229,14 @@
     padding: 6rem 0;
     text-align: center;
     
+}
+
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* ปิดการ scroll แนวนอน */
 }
